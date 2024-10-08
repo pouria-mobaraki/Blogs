@@ -1,24 +1,28 @@
-import React, { useEffect } from 'react'
-import GlobalApi from '../services/GlobalApi'
+import React, { useEffect } from "react";
+import GlobalApi from "../services/GlobalApi";
 
-function IntroPost({post}) {
-
-
+function IntroPost({ post }) {
   return (
-    <div>
-      {post.map((item,index)=>(
-  <div key={index}>
-  <img src={item.coverImage} alt="" />
-  <div>
-    <h4> {item.tag}</h4>
-    <h2>{item.title}</h2>
-    <h4>{item.desc}</h4>
-  </div>
-      </div>
+    <div >
+      {post.map((item, index) => (
+        <div key={index} className="grid grid-cols-1 md:grid-cols-2 mt-10 px-10 md:px-15 lg:px-32 gap-8">
+          <img src={item.coverImage} alt="" className="rounded-lg object-cover w-full h-full"/>
+          <div>
+            <h4 className="text-blue-600 font-semibold"> {item.tag}</h4>
+            <h2 className="text-[23px] font-bold mt-5">{item.title}</h2>
+            <p className="line-clamp-6 text-gray-400 mt-5">{item.desc}</p>
+            <div className="flex items-center mt-5">
+              <img src="./assets/Images/IMG_4682.JPG" className="w-[50px] rounded-full" alt="" />
+              <div className="ml-2">
+                <h3 className="font-bold">Pouria</h3>
+                <h3 className="text-gray-500">27 sep 2024</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       ))}
-    
     </div>
-  )
+  );
 }
 
-export default IntroPost
+export default IntroPost;
