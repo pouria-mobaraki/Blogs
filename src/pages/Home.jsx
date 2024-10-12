@@ -29,9 +29,9 @@ function Home() {
     <div className='container mx-auto mt-5'>
       <Header/>
       <Search/>
-      {post.length>0 ?< IntroPost post={post[0]}/>:null}
+      {post.length>0 ?< IntroPost post={post[3]}/>:null}
       {post.length>0 ?< Blogs post={post}/>:null}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
