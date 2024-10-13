@@ -7,7 +7,7 @@ function IntroPost({ post }) {
   return (
     <div >
       
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-10 px-10 md:px-15 lg:px-32 gap-8" onClick={()=>navigate('blog-detail')}>
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-10 px-10 md:px-15 lg:px-32 gap-8" onClick={()=>navigate('blog-detail/'+post.id)}>
           <img src={post.coverImage} alt="" className="rounded-lg object-cover w-full h-full cursor-pointer"/>
           <div>
             <h4 className="text-blue-600 font-semibold"> {post.tag}</h4>

@@ -26,8 +26,8 @@ function Home() {
     })
   }
   return (
-    <div className='container mx-auto mt-5'>
-      <Header/>
+    <div >
+      {/* <Header/> */}
       <Search/>
       {post.length>0 ?< IntroPost post={post[3]}/>:null}
       {post.length>0 ?< Blogs post={post}/>:null}
