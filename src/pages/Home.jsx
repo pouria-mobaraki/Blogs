@@ -14,7 +14,6 @@ function Home() {
   },[])
   const getPost = ()=> {
     GlobalApi.getPost.then(res => {
-      console.log(res);
       const result = res.data.map(item =>({
         id:item.id,
         title:item.title,
