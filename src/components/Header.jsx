@@ -17,7 +17,7 @@ function Header() {
       </div>
       <ul className='flex gap-4 md:gap-14'>
         <li className=' font-semibold hover:font-bold cursor-pointer duration-300' onClick={()=>navigate('/')}>Home</li>
-        <li className='font-semibold hover:font-bold cursor-pointer duration-300'>About</li>
+        <li className='font-semibold hover:font-bold cursor-pointer duration-300' onClick={()=>navigate('/about')}>About</li>
         <li className='font-semibold hover:font-bold cursor-pointer duration-300'>Contact Us</li>
       </ul>
       <button className='bg-blue-600 font-semibold text-white rounded-full px-2 py-1 flex items-center hover:bg-blue-500 duration-300'>Subscribe <IoLogoYoutube className='ml-3'/></button>
