@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import banner from './../assets/Images/fronend-blog.jpg'
 import { IoSearchOutline } from "react-icons/io5";
 
-function Search() {
+function Search({selectedTag}) {
   const tags =[
     {
       id:1,
@@ -40,7 +40,7 @@ function Search() {
         {tags.map((item,index) => (
           <ul className='cursor-pointer'>
             <li key={item.id}
-             onClick={()=> setFilterActive(index)}
+             onClick={()=> {setFilterActive(index);selectedTag(item.name)}}
               className={`${index===filterActive ? "bg-sky-600 text-white  duration-200" : null} p-2 pb-2 rounded-full hover:scale-110 hover:border-[1px] duration-200 transition-all border-sky-500`}>
                 {item.name}
                 </li>

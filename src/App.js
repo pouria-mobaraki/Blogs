@@ -3,9 +3,11 @@ import './App.css'
 import Home from "./pages/Home";
 import BlogDetail from './pages/BlogDetail';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
+    <>
     <div className='container mx-auto mt-5'>
     <Header/>
     <Routes>
@@ -13,5 +15,7 @@ export default function App() {
     <Route path='/blog-detail/:id' element={<BlogDetail/>}></Route>
     </Routes>
     </div>
+    <Footer />
+    </>
   )
 }
