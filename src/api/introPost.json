@@ -1,10 +1,10 @@
-// [
-//     {
-//         "id":1,
-//         "title": "React VS Angular",
-//         "desc" : "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
-//         "tag" : "Front-end",
-//         "cover-image":"http://localhost:3000/assets/Images/introPost.jpeg"
-//     }
+[
+    {
+        "id":1,
+        "title": "React VS Angular",
+        "desc" : "nLo2DCRC9eE4w2JmuKgVA3fGL3d01kGq752pVALF68qpGLmx2Qrk91QTKkdUqqp45T1K1XV8IhQpcu1hoAQflQ",
+        "tag" : "Front-end",
+        "cover-image":"http://localhost:3000/assets/Images/introPost.jpeg"
+    }
 
-// ]
+]
