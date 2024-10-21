@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
     <div className='container mx-auto mt-5'>
-    <Header/>
+    <Header />
     <Routes>
     <Route path='/' element={<Home/>}></Route>
     <Route path='/blog-detail/:id' element={<BlogDetail/>}></Route>

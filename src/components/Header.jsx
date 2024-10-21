@@ -12,7 +12,7 @@ function Header() {
   return (
     <div className='flex justify-between items-center'>
       {/* <img src={logo} alt="" className='w-[160px] cursor-pointer '/> */}
-      <div className='text-3xl'>
+      <div className='sm:text-3xl '>
         <span className='font-bold text-blue-600 italic cursor-pointer'>Pour</span><span className=' font-bold italic cursor-pointer'>ia</span>
       </div>
       <ul className='flex gap-4 md:gap-14'>
@@ -20,7 +20,7 @@ function Header() {
         <li className='font-semibold hover:font-bold cursor-pointer duration-300' onClick={()=>navigate('/about')}>About</li>
         <li className='font-semibold hover:font-bold cursor-pointer duration-300'>Contact Us</li>
       </ul>
-      <button className='bg-blue-600 font-semibold text-white  rounded-full px-2 py-1 flex items-center hover:bg-blue-500 duration-300 '>Subscribe <IoLogoYoutube className='ml-3'/></button>
+      <button className='bg-blue-600 font-semibold text-white hidden rounded-full px-2 py-1 sm:flex items-center hover:bg-blue-500 duration-300'>Subscribe <IoLogoYoutube className='ml-3'/></button>
     </div>
   )
 }
