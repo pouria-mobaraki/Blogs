@@ -20,7 +20,7 @@ function Header() {
         <li className='font-semibold hover:font-bold cursor-pointer duration-300' onClick={()=>navigate('/about')}>About</li>
         <li className='font-semibold hover:font-bold cursor-pointer duration-300'>Contact Us</li>
       </ul>
-      <button className='bg-blue-600 font-semibold text-white rounded-full px-2 py-1 flex items-center hover:bg-blue-500 duration-300'>Subscribe <IoLogoYoutube className='ml-3'/></button>
+      <button className='bg-blue-600 font-semibold text-white  rounded-full px-2 py-1 flex items-center hover:bg-blue-500 duration-300 '>Subscribe <IoLogoYoutube className='ml-3'/></button>
     </div>
   )
 }
